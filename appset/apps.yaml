@@ -20,9 +20,9 @@ spec:
     spec:
       project: "default"
       source:
-        repoURL: https://github.com/argoproj/argocd-example-apps
+        repoURL: https://github.com/alexmt/argocd-example-apps
         targetRevision: HEAD
-        path: guestbook
+        path: kustomize-guestbook
       destination:
         server: '{{url}}'
         namespace: '{{namespace}}'
