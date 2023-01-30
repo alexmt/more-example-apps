@@ -8,8 +8,10 @@ spec:
   - list:
       elements:
       - cluster: laptop
+        url: http://cluster-laptop:8001
         namespace: akuity-laptop
       - cluster: git-delegate
+        url: http://cluster-git-delegate:8001
         namespace: akuity-git-delegate
   template:
     metadata:
