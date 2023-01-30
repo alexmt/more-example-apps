@@ -22,5 +22,5 @@ spec:
         targetRevision: HEAD
         path: guestbook
       destination:
-        cluster: '{{cluster}}'
+        server: '{{url}}'
         namespace: '{{namespace}}'
