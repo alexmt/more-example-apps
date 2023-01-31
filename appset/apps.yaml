@@ -17,6 +17,9 @@ spec:
     metadata:
       name: '{{cluster}}-guestbook'
       namespace: argocd
+      annotations:
+        argocd-image-updater.argoproj.io/image-list: gcr.io/heptio-images/ks-guestbook-demo:^0.1
+        argocd-image-updater.argoproj.io/write-back-method: git
     spec:
       project: "default"
       source:
